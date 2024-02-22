@@ -1,4 +1,10 @@
 
+// declare array of colors
+const colors = ['red' , 'green', 'blue', 'black'];
+// set default color to black
+let color = 'black'
+
+const colorButton = document.querySelector('#color')
 
 
 
@@ -43,7 +49,7 @@ function generateGrid(noOfSquares){
         container.appendChild(square)
 
         square.addEventListener('mouseover', function(){
-            square.classList.add('blacksquare')})
+            square.classList.add(`${color}square`)})
 
         console.log('squares created')
     }}
